@@ -15,6 +15,8 @@ words : Convertit le fichier en une liste de mots (chaque ligne est considérée
 
 search <mot> : Recherche un mot spécifique dans la liste de mots du fichier.
 
+occurence <mot> : Recherche l'occurence d'un mot spécifique si il est mit dans la liste de mots.
+
 sum <nombres> : Calcule la somme des nombres fournis par l'utilisateur.
 
 avg <nombres> : Calcule la moyenne des nombres fournis par l'utilisateur.
@@ -41,6 +43,7 @@ file test.txt : Sélectionne test.txt comme fichier de travail.
 info : Affiche le nombre de lignes et de caractères dans le fichier test.txt.
 words : Convertit le fichier en une liste de mots.
 search mot : Recherche le mot "mot" dans la liste de mots.
+occurence mot : Recher l'occurence du mot "mot" dans la liste.
 sum 5 10 15 : Calcule la somme des nombres (sortie : 30).
 avg 5 10 15 : Calcule la moyenne des nombres (sortie : 10).
 
@@ -50,3 +53,4 @@ Avertissements
 Assurez-vous que le fichier sélectionné existe dans le répertoire de travail actuel, sinon une erreur FileNotFoundError sera levée.
 
 Pour utiliser les fonctions words et search, le fichier doit contenir une liste de mots séparés par des retours à la ligne sans espaces.
+

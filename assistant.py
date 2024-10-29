@@ -241,39 +241,41 @@ while not finished: # Une boucle qui va continuer a tourner jusqu'a ce que l'uti
             
         elif parameters[0] == 'help':
             print('''
-    Welcome to your personalized tool, here you will find all the commands
-    available with a small explanation of what's their effect.
+Welcome to your personalized tool, here you will find all the commands
+available with a small explanation of what's their effect.
 
-    Here is the list of the commands available:
+Here is the list of the commands available:
 
-    1 - file <name> : This command specifies the name of a file that the tool should work on
-    from the moment you execute it.
+1 - file <name> : This command specifies the name of a file that the tool should work on
+from the moment you execute it.
 
-    2 - info : This command shows how many lines and caracters your file has.
+2 - info : This command shows how many lines and caracters your file has.
 
-    3 - words : Converts the file to a list of words.
+3 - words : Converts the file to a list of words.
 
-    4 - search : Lets you search a word in the file you provided.
-    Attention, the file must be a list of words.
+4 - search <word> : Lets you search a word in the file you provided.
+Attention, the file must be a list of words.
 
-    5 - sum : This command will add all the numbers you provide.
-    The format is with spaces.
-    Ex. sum 2 7 10 9 8
-        output = 36
+5 - occurence <word> : Lets you search the occurence of a word if provided.
 
-    6 - avg : This command will calculate the average of the numbers you provide.
-    Same format as sum.
-    Ex. avg 5 10 2 4 10
-        output = 6.2
+6 - sum <number1> <number2> <number ..> : This command will add all the numbers you provide.
+The format is with spaces.
+Ex. sum 2 7 10 9 8
+output = 36
 
-    7 - help : This command gives you some info and shows you all the commands available.
+7 - avg <number1> <number2> <numbe ..> : This command will calculate the average of the numbers you provide.
+Same format as sum.
+Ex. avg 5 10 2 4 10
+output = 6.2
 
-    8 - modify <directory> : This command lets you modify the directory.
+8 - help : This command gives you some info and shows you all the commands available.
 
-    9 - directory : This command shows which directory you are in now.
+9 - modify <directory> : This command lets you modify the directory.
 
-    10 - exit : This command will exit the program.
-    ''')
+10 - directory : This command shows which directory you are in now.
+
+11 - exit : This command will exit the program.
+''')
         
         elif parameters[0] == 'modify': # Permet de modifier le directory dans lequel on se trouver
             try:
